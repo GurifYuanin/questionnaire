@@ -1,0 +1,129 @@
+{
+  // JSHint Default Configuration File (as on JSHint website)
+  // See http://jshint.com/docs/ for more details
+
+  "maxerr"        : 50,       // {int} Maximum error before stopping
+
+  //////////
+  // 语法检测 //
+  //////////
+  // 是否禁止位运算
+  "bitwise"       : false,     // true: Prohibit bitwise operators (&, |, ^, etc.)
+  // 是否强制驼峰
+  "camelcase"     : false,    // true: Identifiers must be in camelCase
+  // 是否强制需要 {} 在每一个新块或作用域
+  "curly"         : true,     // true: Require {} for every new block or scope
+  // 是否强制使用 ===
+  "eqeqeq"        : true,     // true: Require triple equals (===) for comparison
+  // ？
+  "forin"         : true,     // true: Require filtering for..in loops with obj.hasOwnProperty()
+  "freeze"        : true,     // true: prohibits overwriting prototypes of native objects such as Array, Date etc.
+  // 是否要求立即实行函数需要 ; 结尾
+  "immed"         : true,     // true: Require immediate invocations to be wrapped in parens e.g. `(function () { } ());`
+  // 变量、函数在使用之前是否必须已经定义（即不允许声明提前）
+  "latedef"       : false,    // true: Require variables/functions to be defined before being used
+  // 构造函数首字母大写
+  "newcap"        : false,    // true: Require capitalization of all constructor functions e.g. `new F()`
+  // 禁用 caller 和 callee
+  "noarg"         : true,     // true: Prohibit use of `arguments.caller` and `arguments.callee`
+  // 禁止空块
+  "noempty"       : false,     // true: Prohibit use of empty blocks
+  // ？
+  "nonbsp"        : true,     // true: Prohibit "non-breaking whitespace" characters.
+  // ？
+  "nonew"         : false,    // true: Prohibit use of constructors for side-effects (without assignment)
+  // 禁用 ++ 和 --
+  "plusplus"      : false,    // true: Prohibit use of `++` and `--`
+  // 引号规范
+  "quotmark"      : false,    // Quotation mark consistency:
+                              //   false    : do nothing (default)
+                              //   true     : ensure whatever is used is consistent
+                              //   "single" : require single quotes
+                              //   "double" : require double quotes
+  "undef"         : true,     // true: Require all non-global variables to be declared (prevents global leaks)
+  // 是否提醒声明但没使用的变量、函数
+  "unused"        : true,     // Unused variables:
+                              //   true     : all variables, last function parameter
+                              //   "vars"   : all variables only
+                              //   "strict" : all variables, all function parameters
+  // 是否使用严格模式
+  "strict"        : false,     // true: Requires all functions run in ES5 Strict Mode
+  // 函数最多形参个数
+  "maxparams"     : false,    // {int} Max number of formal params allowed per function
+  // 块最大深度
+  "maxdepth"      : false,    // {int} Max depth of nested blocks (within functions)
+  // 函数最多可以被声明几次
+  "maxstatements" : false,    // {int} Max number statements per function
+  // ？
+  "maxcomplexity" : false,    // {int} Max cyclomatic complexity per function
+  // 一行代码最多可以有多少字符
+  "maxlen"        : false,    // {int} Max number of characters per line
+  // 是否禁用 var
+  "varstmt"       : false,    // true: Disallow any var statements. Only `let` and `const` are allowed.
+
+  //////////////
+  // Relaxing //
+  //////////////
+  // ecmascript 版本
+  "esversion"     : 6,         // {int} Specify the ECMAScript version to which the code must adhere.
+  // ？
+  "asi"           : false,     // true: Tolerate Automatic Semicolon Insertion (no semicolons)
+  // ？
+  "boss"          : false,     // true: Tolerate assignments where comparisons would be expected
+  // 是否允许 debugger 语句
+  "debug"         : false,     // true: Allow debugger statements e.g. browser breakpoints.
+  // 是否允许 == null 运算
+  "eqnull"        : false,     // true: Tolerate use of `== null`
+  "moz"           : false,     // true: Allow Mozilla specific syntax (extends and overrides esnext features)
+  // 是否允许使用 eval 函数
+  "evil"          : false,     // true: Tolerate use of `eval` and `new Function()`
+  // ？
+  "expr"          : false,     // true: Tolerate `ExpressionStatement` as Programs
+  "funcscope"     : false,     // true: Tolerate defining variables inside control statements
+  // 是否允许全局使用 use strict
+  "globalstrict"  : true,     // true: Allow global "use strict" (also enables 'strict')
+  // 是否允许访问 __iterator__ 属性
+  "iterator"      : false,     // true: Tolerate using the `__iterator__` property
+  "lastsemic"     : false,     // true: Tolerate omitting a semicolon for the last statement of a 1-line block
+  "laxbreak"      : false,     // true: Tolerate possibly unsafe line breakings
+  "laxcomma"      : false,     // true: Tolerate comma-first style coding
+  "loopfunc"      : false,     // true: Tolerate functions being defined in loops
+  "multistr"      : false,     // true: Tolerate multi-line strings
+  "noyield"       : false,     // true: Tolerate generator functions with no yield statement in them.
+  "notypeof"      : false,     // true: Tolerate invalid typeof operator values
+  "proto"         : false,     // true: Tolerate using the `__proto__` property
+  "scripturl"     : false,     // true: Tolerate script-targeted URLs
+  "shadow"        : false,     // true: Allows re-define variables later in code e.g. `var x=1; x=2;`
+  "sub"           : false,     // true: Tolerate using `[]` notation when it can still be expressed in dot notation
+  "supernew"      : false,     // true: Tolerate `new function () { ... };` and `new Object;`
+  "validthis"     : false,     // true: Tolerate using this in a non-constructor function
+
+  //////////////////
+  // 环境变量 //
+  //////////////////
+  "browser"       : true,     // Web Browser (window, document, etc)
+  "browserify"    : false,     // Browserify (node.js code in the browser)
+  "couch"         : false,    // CouchDB
+  "devel"         : true,     // Development/debugging (alert, confirm, etc)
+  "dojo"          : false,    // Dojo Toolkit
+  "jasmine"       : false,    // Jasmine
+  "jquery"        : false,    // jQuery
+  "mocha"         : true,     // Mocha
+  "mootools"      : false,    // MooTools
+  "node"          : true,     // Node.js
+  "nonstandard"   : false,    // Widely adopted globals (escape, unescape, etc)
+  "phantom"       : false,    // PhantomJS
+  "prototypejs"   : false,    // Prototype and Scriptaculous
+  "qunit"         : false,    // QUnit
+  "rhino"         : false,    // Rhino
+  "shelljs"       : false,    // ShellJS
+  "typed"         : false,    // Globals for typed array constructions
+  "worker"        : false,    // Web Workers
+  "wsh"           : false,    // Windows Scripting Host
+  "yui"           : false,    // Yahoo User Interface
+
+  // Custom Globals
+  "globals"       : { // additional predefined global variables
+    "require"     : true
+  }
+}
