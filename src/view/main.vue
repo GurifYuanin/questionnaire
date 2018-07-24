@@ -1,6 +1,6 @@
 <template>
 <section>
-这里是默认视图！
+  欢迎进入调查问卷
 </section>
 </template>
 
@@ -9,7 +9,7 @@ export default {
   data () {
     return {
 
-    }
+    };
   }
 }
 </script>

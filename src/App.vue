@@ -1,20 +1,26 @@
 <template>
 <article id="#app">
   <Layout>
-    <Header>这里是头部</Header>
+    <Header><Head></Head></Header>
     <Layout>
       <Content>
         <router-view />
       </Content>
     </Layout>
-    <Footer>这里是页脚</Footer>
+    <Footer><Foot></Foot></Footer>
   </Layout>
 </article>
 </template>
 
 <script>
+import Head from '@/view/head.vue';
+import Foot from '@/view/foot.vue';
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Head,
+    Foot
+  }
 }
 </script>
 
