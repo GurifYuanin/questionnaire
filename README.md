@@ -1,30 +1,24 @@
-# questionnaire
+# 问卷调查
 
-> A Vue.js project
+发布、管理、填写问卷调查。
 
-## Build Setup
+>  希望是附丽于存在的，有存在，便有希望，有希望，便是光明。
+>  ---鲁迅《记谈话》
+
+
+## 开发步骤
 
 ``` bash
-# install dependencies
+# 下载项目和依赖
+git clone git@github.com:GurifYuanin/questionnaire.git
+cd questionnaire
 npm install
 
-# serve with hot reload at localhost:8080
+# 以开发环境进行开发
 npm run dev
 
-# build for production with minification
+# 以生产环境打包代码
 npm run build
 
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

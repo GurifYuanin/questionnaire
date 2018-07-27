@@ -1,6 +1,8 @@
 <template>
-<section>
-  这里是脚部（？）
+<section style="text-align: center;">
+  <Row>
+    ©copyright
+  </Row>
 </section>
 </template>
 
